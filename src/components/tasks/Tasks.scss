@@ -1,0 +1,118 @@
+$background: #f5f6fa;
+$text: #9c9c9c;
+$input-bg-color: #fff;
+$input-text-color: #a3a3a3;
+$button-bg-color: #7f8ff4;
+$button-text-color: #fff;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper h1 {
+  padding-top: 120px;
+  margin: 0;
+  font-size: 3.2rem;
+}
+
+.wrapper h2 {
+  padding-bottom: 40px;
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.wrapper h1 {
+  color: #fff;
+  text-shadow: 1px 1px 15px black;
+}
+
+.wrapper h2 {
+  color: #fff;
+  text-shadow: 0.8px 0.8px 15px black;
+}
+
+.tasks-side {
+  flex: 1;
+}
+
+.tasks-list {
+  flex: 2;
+}
+
+body {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: $button-bg-color;
+  }
+}
+
+//** helper
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+//** button
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+
+  &--primary {
+    background: $button-bg-color;
+    color: $button-text-color;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3.5px;
+    padding: 12px 36px;
+
+    &:hover {
+      background: darken($button-bg-color, 4%);
+    }
+
+    &:active {
+      background: $button-bg-color;
+      box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &--inside {
+    margin-left: -96px;
+  }
+}
+
+//** form
+.form {
+  &__field {
+    width: 360px;
+    background: #fff;
+    color: $input-text-color;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 0;
+    outline: 0;
+    margin-top: 30px;
+    padding: 22px 18px;
+    border-radius: 5px;
+  }
+}
